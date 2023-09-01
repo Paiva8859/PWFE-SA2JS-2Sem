@@ -1,12 +1,20 @@
 .img{
-    height: 30vh;
+    height: 45vh;
 }
 .imgs{
     display: flex;
     align-items: center;
     align-items: flex-start;
+    height: 45vh;
 }
 
-.btn{
-    display: none;
+main{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
+

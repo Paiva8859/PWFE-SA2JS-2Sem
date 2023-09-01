@@ -1,5 +1,3 @@
-const turnOn = document.getElementById ( 'turnOn' );
-const turnOff = document.getElementById ( 'turnOff' );
 const lamp = document.getElementById ( 'lamp' );
 const alavanca = document.getElementById ('alavanca')
 const redstone = document.getElementById ('redstone')
@@ -20,19 +18,17 @@ function lampOn () {
 
 function lampOff () {
     if ( !isLampBroken () ) {
-        lamp.src = 'img/desligada.png';
-        alavanca.src = 'img/alavancaDesligada.png';
-        redstone.src = 'img/RedApagada.png';
+        lamp.src = '../img/desligada.png';
+        alavanca.src = '../img/alavancaDesligada.png';
+        redstone.src = '../img/RedApagada.png';
         alavanca.style.height="40vh";
     }
 }
 
 function lampBroken () {
-    lamp.src = 'img/quebrado.jpg';
+    lamp.src = '../img/quebrado.jpg';
 }
 
-turnOn.addEventListener ( 'click', lampOn );
-turnOff.addEventListener ( 'click', lampOff,);
 lamp.addEventListener ( 'dblclick', lampBroken );
 alavanca.addEventListener('click', function () {
     if (lampadaLigada) {
