@@ -1,0 +1,12 @@
+.img{
+    height: 30vh;
+}
+.imgs{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.btn{
+    display: none;
+}
