@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Calculadora.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <li>
-                <ul class="nav-item">
-                    <a class="nav-link" href="../PWFE-SA2JS-2Sem/html/Lampada.html">Lâmpada</a>
+                <ul>
+                    <a href="../html/Lampada.html">Lâmpada</a>
                 </ul>
-                <ul class="nav-item">
-                    <a class="nav-link" href="../PWFE-SA2JS-2Sem/html/Calculadora.html">Calculadora</a>
+                <ul>
+                    <a href="../html/Calculadora.html">Calculadora</a>
                 </ul>
-                <ul class="nav-item">
-                    <a class="nav-link" href="../PWFE-SA2JS-2Sem/html/Semaforo.html">Semáforo</a>
+                <ul>
+                    <a href="../html/Semaforo.html">Semáforo</a>
                 </ul>
             </li>
         </nav>
     </header>
     <main>
-
+        <div class="calculadora">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <div id="line1">
+                    <button onclick="clearDisplay()" id="c">C</button>
+                    <button onclick="appendToDisplay('<=')"><=</button>
+                </div>
+                <div id="line2">
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                </div>
+                <div id="line3">
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                </div>
+                <div id="line4">
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                </div>
+                <div id="line5">
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="calculateResult()">=</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer">
@@ -37,4 +70,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/Calculadora.js"></script>
 </html>
