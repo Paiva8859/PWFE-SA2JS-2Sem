@@ -44,3 +44,9 @@ body{
     color: rgb(9, 233, 1);
     font-family: 'Black Ops One';
 }
+
+@media (max-width: 400px){
+    #S{
+        width: 300px;
+    }
+}
