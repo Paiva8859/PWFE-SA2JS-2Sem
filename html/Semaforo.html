@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semáforo</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Semaforo.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -24,7 +27,16 @@
     </header>
     <main>
         <section>
-            
+            <div id="S">
+                <div>
+                    <div class="lamp" id="red"></div>
+                    <div class="lamp" id="yellow"></div>
+                    <div class="lamp" id="green"></div>
+                </div>
+                <div class="tela">
+                    <p class="cont"></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -39,4 +51,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/Semaforo.js"></script>
 </html>
