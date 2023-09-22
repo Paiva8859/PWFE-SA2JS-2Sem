@@ -36,7 +36,7 @@ function lampOff () {
 }
 
 function lampBroken () {
-    lamp.src = '../img/quebrado.jpg';
+    lamp.src = '../img/desligada.png';
     bau.src = '../img/BauAberto.png';
     isLampBroken();
 }
