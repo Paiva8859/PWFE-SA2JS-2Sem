@@ -11,7 +11,7 @@ function appendToDisplay(value) {
         }
     }
     // Se o valor não for '<=', anexa-o ao visor
-    if (value !== '<=') {
+    else{ //(simbolo usado para apagar o "ngc")
         display.value += value;
     }
 }
