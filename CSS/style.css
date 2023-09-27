@@ -44,3 +44,12 @@ footer {
     justify-content: space-evenly;
     flex-direction: row;
 }
+
+@media (max-width: 400px){
+    header{
+        font-size: 12px;
+}
+    .footer ul{
+        font-size: 10px;
+    }
+}
