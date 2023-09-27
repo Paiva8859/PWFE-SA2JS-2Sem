@@ -65,3 +65,14 @@ footer {
         font-size: 10px;
     }
 }
+
+@media (max-width: 400px){
+    .imgsIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgsIndex img{
+        height: 40%;
+        width: 80%;
+    }
+}
