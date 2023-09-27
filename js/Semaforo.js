@@ -12,7 +12,7 @@ function contagem(a) {
 
 // Função para mostrar a luz vermelha
 function red() {
-    contagem(15); // Inicia uma contagem regressiva de 15 segundos
+    contagem(10); // Inicia uma contagem regressiva de 15 segundos
     var lamp = document.getElementById('red');
     lamp.style.backgroundColor = "red";
     setTimeout(function () {
