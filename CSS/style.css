@@ -45,6 +45,18 @@ footer {
     flex-direction: row;
 }
 
+.imgsIndex{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgsIndex img{
+    height: 80%;
+    width: 30%;
+}
+
 @media (max-width: 400px){
     header{
         font-size: 12px;
